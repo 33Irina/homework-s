@@ -4,7 +4,7 @@ public class StatsService {
     public long sum(long[] sales) {
         long result = 0;
         for (long sale : sales) {
-            result += sale; //result = result + sale
+            result += sale;
         }
         return result;
     }
@@ -63,9 +63,12 @@ public class StatsService {
         int counter = 0;
         for (long sale : sales) {
             if (sale > average(sales)) {
+
                 counter++;
             }
         }
+
         return counter;
     }
-}
+    }
+
