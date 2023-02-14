@@ -51,7 +51,7 @@ public class StatsService {
         long averageSale = average(sales);
         int counter = 0;
         for (long sale : sales) {
-            if (sale < average(sales)) {
+            if (sale < averageSale) {
                 counter++;
             }
         }
